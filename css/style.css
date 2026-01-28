@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    line-height: 1.7;
+    color: #516171;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700 !important;
+    color: #092032;
+}
+
+a{
+    color: #092032;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 500;
+}
+
+section{
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+img{
+    width: 100%;
+}
+
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.intro{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.intro h6{
+    font-weight: 400;
+    color: #ff4d29;
+}
+
+.intro p{
+    max-width: 500px;
+    margin: auto;
+}
+
+
+/* NAVBAR */
+.top-nav{
+    background-color: #ff4d29;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.top-nav p{
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 16px;
+    color: #fff;
+}
+
+.top-nav a{
+    color: #fff;
+}
+
+.top-nav a:hover{
+    color: #092032;
+}
+
+.top-nav a:visited{
+    color: #fff;
+}
+
+.top-nav span, i{
+    color: #fff;
+    vertical-align: middle;
+}
+
+.navbar{
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:active{
+    color: #ff4d29 !important;
+}
+
+.dropdown-menu li{
+    color: #082032;
+}
+
+.dropdown-menu li a:hover{
+    color: #ff4d29;
+}
+
+.dropdown-menu .dropdown-item a:hover{
+    color: #ff4d29;
+}
+
+/* BTN */
+.btn{
+    padding: 9px 24px;
+    font-weight: 500;
+}
+
+.btn-brand{
+    background-color: #ff4d29;
+    color: #fff;
+    border-color: #ff4d29;
+}
+
+.btn-brand:hover{
+    background-color: #e73c19;
+    color: #092032;
+}
+
+
+/* FOOTER */
+footer {
+    background: linear-gradient(0deg, rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9)), url(../images/Projectje/2.jpg), #082032;;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer .footer-top {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+footer .navbar-brand {
+    color: #fff;
+}
+
+footer h4{
+    color: #fff;
+}
+
+footer p {
+    color: #ADB3B9;
+}
+
+footer a:link{
+    color: #ADB3B9;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #ff4d29;
+}
+
+footer .social-icons a {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+/* Actieve navigatie link oranje maken */
+.navbar .nav-link.active {
+  color: #ff4d29 !important;   /* oranje */
+  font-weight: 600;
+}
+
+/* Optioneel: hover ook oranje */
+.navbar .nav-link:hover {
+  color: #ff4d29;
+}

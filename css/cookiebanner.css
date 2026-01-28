@@ -1,0 +1,122 @@
+/* COOKIE BANNER */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  padding: 15px 20px;
+  z-index: 9999;
+  display: none;
+}
+
+.cookie-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.cookie-content p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.cookie-content a {
+  color: #ff7a00;
+  text-decoration: underline;
+}
+
+.cookie-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Cookie banner sluitknop */
+.cookie-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.cookie-close:hover {
+  color: #ff7a00;
+}
+
+/* Mobiel */
+@media (max-width: 768px) {
+  .cookie-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Cookie banner animatie */
+.cookie-banner {
+  opacity: 1;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.cookie-banner.fade-out {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+/* Tooltip container */
+.cookie-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Tooltip zelf */
+.cookie-tooltip {
+  position: absolute;
+  bottom: 120%;
+  right: 0;
+  background: #111;
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Tooltip pijltje */
+.cookie-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #111 transparent transparent transparent;
+}
+
+/* Hover animatie */
+.cookie-close:hover .cookie-tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}

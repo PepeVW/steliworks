@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/galerij-tabs2.css">
+    <link rel="stylesheet" href="css/cookiebanner.css">
+
+    <title>STELI-WORKS || GALERIJ</title>
+</head>
+
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="top-nav">
+        <div class="container d-flex justify-content-between">
+            <p><i class="bx bxs-envelope"></i> <a href="mailto:info@steliworks.be">info@steliworks.be</a></p>
+            <p><i class="bx bxs-phone-call"></i> (+32) 496 83 66 55</p>
+        </div>
+    </nav>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/steli-logo3.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer" id="nav-contact">Contact Info</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#galerij-tabs" id="nav-galerij">Galerij</a></li>
+                </ul>
+                <a href="contactformulier.html" class="btn btn-brand ms-lg-3">Contactformulier</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- GALERIJ SECTION -->
+    <section id="galerij-tabs" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">GALERIJ</h2>
+            <h5 class="text-center mb-5">Maak uw keuze uit de verschillende specialisaties</h5>
+
+            <!-- Tabs -->
+            <div class="tabs text-center mb-5">
+                <button class="tab-button btn btn-brand active" data-tab="tab1">Afbraakwerken</button>
+                <button class="tab-button btn btn-brand" data-tab="tab2">Sloopwerken</button>
+                <button class="tab-button btn btn-brand" data-tab="tab3">Dakrenovatie</button>
+            </div>
+
+            <!-- TAB CONTENTS -->
+            <div class="tab-content active" id="tab1">
+                <h5>Afbraak achterbouw rijwoning</h5>
+                <p>Achterbouw afbreken in Mechelen, inclusief tuin uitgraven.</p>
+                <div class="gallery row g-3">
+                    <div class="col-6 col-md-4"><a href="fotos/20.jpg" class="glightbox" data-gallery="tab1-gal1"><img src="fotos/20.jpg" alt=""></a></div>
+                    <div class="col-6 col-md-4"><a href="fotos/21.jpg" class="glightbox" data-gallery="tab1-gal1"><img src="fotos/21.jpg" alt=""></a></div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab2">
+                <h5>Schouwen – fase 1</h5>
+                <div class="gallery row g-3">
+                    <div class="col-6 col-md-4"><a href="fotos/10.jpg" class="glightbox" data-gallery="tab2-gal1"><img src="fotos/10.jpg" alt=""></a></div>
+                    <div class="col-6 col-md-4"><a href="fotos/11.jpg" class="glightbox" data-gallery="tab2-gal1"><img src="fotos/11.jpg" alt=""></a></div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab3">
+                <h5>Dakrenovatie</h5>
+                <div class="gallery row g-3">
+                    <div class="col-6 col-md-4"><a href="fotos/30.jpg" class="glightbox" data-gallery="tab3-gal1"><img src="fotos/30.jpg" alt=""></a></div>
+                    <div class="col-6 col-md-4"><a href="fotos/31.jpg" class="glightbox" data-gallery="tab3-gal1"><img src="fotos/31.jpg" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section id="footer">
+        <footer class="text-center py-4">
+            <p>STELI-WORKS – Rijkevorselseweg 64 – 2340 BEERSE – GSM: (+32) 496 83 66 55</p>
+            <p>Email: <a href="mailto:info@steliworks.be">info@steliworks.be</a> – BTW: BE 0722.988.906</p>
+            <p>Created & Designed by <a href="mailto:webmaster@steliworks.be">PepeVW</a></p>
+        </footer>
+    </section>
+
+    <!-- COOKIE BANNER -->
+    <div id="cookie-banner" class="cookie-banner">
+        <button id="cookie-close" class="cookie-close">×</button>
+        <div class="cookie-content">
+            <p>Deze website gebruikt cookies. <a href="privacy.html">Meer info</a></p>
+            <div class="cookie-buttons">
+                <button id="cookie-accept" class="btn btn-brand">Accepteren</button>
+                <button id="cookie-decline" class="btn btn-outline-secondary">Weigeren</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- GALERIJ TABS -->
+    <script>
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabButtons.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(tc => tc.classList.remove('active'));
+
+                btn.classList.add('active');
+                document.getElementById(btn.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+
+    <!-- SCROLL NAV ACTIVE -->
+    <script>
+        const navGalerij = document.getElementById('nav-galerij');
+        const navContact = document.getElementById('nav-contact');
+        const galerijSection = document.getElementById('galerij-tabs');
+        const footerSection = document.getElementById('footer');
+
+        function setActive(link) {
+            document.querySelectorAll('.navbar .nav-link').forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+        }
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY || window.pageYOffset;
+            const galerijTop = galerijSection.offsetTop;
+            const galerijBottom = galerijTop + galerijSection.offsetHeight;
+            const footerTop = footerSection.offsetTop;
+
+            if (scrollY + 100 >= footerTop) {
+                setActive(navContact);
+            } else if (scrollY + 100 >= galerijTop) {
+                setActive(navGalerij);
+            } else {
+                document.querySelectorAll('.navbar .nav-link').forEach(l => l.classList.remove('active'));
+            }
+        });
+    </script>
+
+    <!-- COOKIE BANNER -->
+    <script>
+        function setCookie(name, value, days) {
+            const d = new Date();
+            d.setTime(d.getTime() + (days*24*60*60*1000));
+            document.cookie = name+"="+value+";path=/;expires="+d.toUTCString();
+        }
+
+        function getCookie(name) {
+            const c = document.cookie.split(';').map(c => c.trim());
+            for(let cookie of c) {
+                if(cookie.startsWith(name+"=")) return cookie.split('=')[1];
+            }
+            return null;
+        }
+
+        function closeBanner(banner){banner.style.display="none";}
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const banner = document.getElementById('cookie-banner');
+            if(!banner) return;
+
+            if(!getCookie('cookie_consent')) banner.style.display = 'block';
+
+            document.getElementById('cookie-accept').onclick = () => { setCookie('cookie_consent','accepted',365); closeBanner(banner); };
+            document.getElementById('cookie-decline').onclick = () => { setCookie('cookie_consent','declined',365); closeBanner(banner); };
+            document.getElementById('cookie-close').onclick = () => { setCookie('cookie_consent','declined',365); closeBanner(banner); };
+        });
+    </script>
+
+</body>
+</html>
