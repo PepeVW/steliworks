@@ -181,3 +181,11 @@ footer .social-icons a {
 .navbar .nav-link:hover {
   color: #ff4d29;
 }
+
+/* HERO SLIDES FIX */
+.slide {
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
