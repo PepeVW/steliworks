@@ -11,10 +11,8 @@
 
 /* Slides */
 .hero-slide {
-  min-height: 80vh;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
 .slide-1 { background-image: url("../hero-img/hero-afbraak.png"); }
@@ -174,6 +172,7 @@
   background-size: cover;
   background-position: center;
 }
+
 
 
 
