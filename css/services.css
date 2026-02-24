@@ -14,7 +14,7 @@
   min-height: 80vh;
   background-size: cover;
   background-position: center;
-  position: relative;
+  background-repeat: no-repeat;
 }
 
 .slide-1 { background-image: url("../hero-img/hero-afbraak.png"); }
@@ -167,6 +167,7 @@
   transform: translateY(-8px);
   box-shadow: 0 20px 50px rgba(0,0,0,0.2);
 }
+
 
 
 
