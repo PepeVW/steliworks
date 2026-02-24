@@ -17,7 +17,7 @@
   position: relative;
 }
 
-.slide-1 { background: red !important; }
+.slide-1 { background-immage: url("/hero-img/hero-afbraak.png); }
 .slide-2 { background-image: url("../hero-img/hero-sloop.png"); }
 .slide-3 { background-image: url("../hero-img/hero-dak.png"); }
 .slide-4 { background-image: url("../hero-img/hero-asbest.png"); }
@@ -167,6 +167,7 @@
   transform: translateY(-8px);
   box-shadow: 0 20px 50px rgba(0,0,0,0.2);
 }
+
 
 
 
